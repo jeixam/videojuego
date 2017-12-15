@@ -101,6 +101,18 @@ class Controller_Users extends Controller_Rest
 
                 return $json;
         }
-
     }
+    //token
+
+    public function autentication ()
+        {
+
+            $decoded = JWT::decode($jwt, $key, array('HS256'));
+            //if($decoded=>$jwt==Model_Users::find('all'))
+                //{
+                   
+
+                //}
+            
+        }
 }
