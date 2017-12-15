@@ -10,7 +10,19 @@ class Listas
             (
             'id' => array('type' => 'int', 'constraint' => 11, 'auto_increment' => true),
             'titulo' => array('type' => 'varchar', 'constraint' => 100),
-            ), array('id'));
+            'id_usuario' => array('type' => 'int', 'constraint' => 11),
+            ), array('id'),false, 'InnoDB', 'utf8_unicode_ci',
+    array(
+        array(
+            'constraint' => 'claveAjenaDeListasAUsuarios',
+            'key' => 'id_usuario',
+            'reference' => array(
+                'table' => 'usuarios',
+                'column' => 'id',
+            ),
+            'on_update' => 'CASCADE',
+            'on_delete' => 'RESTRICT'
+        ));
     }
 
     function down()
