@@ -17,6 +17,7 @@ class Model_Users extends Orm\Model
         'url' => array
         (
             'data_type' => 'varchar'
+<<<<<<< HEAD
         ),
         'id_usuarios' => array
         (
@@ -35,4 +36,8 @@ class Model_Users extends Orm\Model
         'cascade_delete' => false,
     )
 );
+=======
+        )
+        );
+>>>>>>> 9f5cdbe7b7d24a0d74b27e102816c48956357333
 }

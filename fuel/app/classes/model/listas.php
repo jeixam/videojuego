@@ -15,6 +15,7 @@ class Model_Listas extends Orm\Model
             'data_type' => 'int'   
         )
         );
+<<<<<<< HEAD
 
 protected static $_many_many = array(
     'cancion' => array(
@@ -31,6 +32,11 @@ protected static $_many_many = array(
 protected static $_belongs_to = array(
     'usuarios' => array(
         'key_from' => 'id_usuario',
+=======
+protected static $_belongs_to = array(
+    'usuarios' => array(
+        'key_from' => 'usuario_id',
+>>>>>>> 9f5cdbe7b7d24a0d74b27e102816c48956357333
         'model_to' => 'Model_users',
         'key_to' => 'id',
         'cascade_save' => true,
