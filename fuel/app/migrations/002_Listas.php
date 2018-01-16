@@ -9,6 +9,7 @@ class Listas
             (
             'id' => array('type' => 'int', 'constraint' => 11, 'auto_increment' => true),
             'nombre' => array('type' => 'varchar', 'constraint' => 100),
+            'editable' => array('type' => 'int', 'constraint' => 11),
             'id_usuario' => array('type' => 'int', 'constraint' => 11),
             ), array('id'),true, 'InnoDB', 'utf8_general_ci',
         array

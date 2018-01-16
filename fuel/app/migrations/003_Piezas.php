@@ -12,6 +12,8 @@ class Piezas
             'vida' => array('type' => 'int', 'constraint' => 11),
             'velocidad' => array('type' => 'int', 'constraint' => 11),
             'cadencia' => array('type' => 'int', 'constraint' => 11),
+            'descripcion' => array('type' => 'varchar', 'constraint' => 100, 'null'=>true),
+            'tipo' => array('type' => 'varchar', 'constraint' => 100),
             'daño' => array('type' => 'int', 'constraint' => 11)
             ), array('id'));
     }
