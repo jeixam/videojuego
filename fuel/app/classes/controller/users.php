@@ -107,6 +107,15 @@ class Controller_Users extends Controller_Autentificacion
         }
         else
         {
+            foreach ($entry as $key => $user) 
+            {
+                $userInfo=array(
+                    'nombre'=>$user->nombre,
+                    'victorias'=>$user->victorias,
+                    'derrotas'=>$user->derrotas,
+                    'email'=>$user->email
+                );
+            }
             $nombreArray=$input['nombre'];
             $passArray=$input['password'];
             $key = 'klj34234kl2j34k259923j';
@@ -115,9 +124,15 @@ class Controller_Users extends Controller_Autentificacion
                 "password" => $passArray,
             );
             $jwt = JWT::encode($token, $key);
+            $info=array('token'=>$jwt, 
+                'nombre'=>$userInfo['nombre'],
+                'victoras'=>$userInfo['victorias'],
+                'derrotas'=>$userInfo['derrotas'],
+                'email'=>$userInfo['email'],
+            );
             $json = $this->response(array(
                     'code' => ' 200 ',
-                    'data'=>$jwt,
+                    'data'=>$info,
                     'message' => ' usuario encontrado, logeado'
                 ));
 
@@ -130,11 +145,9 @@ class Controller_Users extends Controller_Autentificacion
      */
 public function post_rememberPassword()
     {
-    	//llamar a la funcion
-        if($this->LoginAuthentification())
-        {
+    	
             $input = $_POST;
-        	$infoID=$this->userID();
+        	
             if($input['email']==$this->userEmail())
             {
                 $datauser = DB::update('usuarios');
@@ -158,16 +171,6 @@ public function post_rememberPassword()
             ));
             return $response;
             }
-        }
-        else
-        {
-            $response = $this->response(array(
-                'code' => 400,
-                'message' => ' El usuario debe loguearse primero ',
-                'data' => var_dump($this->LoginAuthentification())
-            ));
-            return $response;
-        }
     }
     
 }
