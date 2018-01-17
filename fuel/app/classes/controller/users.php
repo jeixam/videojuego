@@ -32,7 +32,7 @@ class Controller_Users extends Controller_Autentificacion
 
             $json = $this->response(array(
                 'code' => 200,
-                'message' => 'usuario creado',
+                'message' => ' usuario creado ',
                 'nombre' => $input['nombre']
             ));
 
@@ -147,9 +147,21 @@ public function post_rememberPassword()
     {
     	
             $input = $_POST;
+
+            $entry = Model_Users::find('all', 
+            array('where'=>array
+                (
+                    array('email', $input['email']),
+                ),
+            ));
         	
-            if($input['email']==$this->userEmail())
+            if(isset($entry))
             {
+                foreach ($entry as $key => $value)
+                {
+                    $id = $entry[$key]->id;
+                }
+                $infoID=$id;
                 $datauser = DB::update('usuarios');
                 $datauser->where('id', '=', $infoID);
                 $datauser->value('password', $input['password']);

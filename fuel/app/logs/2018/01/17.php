@@ -18,3 +18,25 @@ WARNING - 2018-01-17 19:16:13 --> Fuel\Core\Fuel::init - The configured locale e
 WARNING - 2018-01-17 19:23:26 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
 WARNING - 2018-01-17 19:26:43 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
 WARNING - 2018-01-17 19:29:13 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2018-01-17 22:15:45 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2018-01-17 22:16:53 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2018-01-17 22:20:20 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2018-01-17 22:20:20 --> Error - syntax error, unexpected '$datauser' (T_VARIABLE) in /var/www/html/videojuego/fuel/app/classes/controller/users.php on line 161
+WARNING - 2018-01-17 22:24:31 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2018-01-17 22:24:31 --> Error - syntax error, unexpected '$datauser' (T_VARIABLE) in /var/www/html/videojuego/fuel/app/classes/controller/users.php on line 161
+WARNING - 2018-01-17 22:24:36 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2018-01-17 22:24:36 --> Error - syntax error, unexpected '$datauser' (T_VARIABLE) in /var/www/html/videojuego/fuel/app/classes/controller/users.php on line 161
+WARNING - 2018-01-17 22:26:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2018-01-17 22:28:59 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2018-01-17 22:31:03 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2018-01-17 22:31:03 --> Notice - Trying to get property of non-object in /var/www/html/videojuego/fuel/app/classes/controller/users.php on line 160
+WARNING - 2018-01-17 22:38:51 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2018-01-17 22:38:51 --> Notice - Undefined variable: UserinfoID in /var/www/html/videojuego/fuel/app/classes/controller/users.php on line 168
+WARNING - 2018-01-17 22:41:51 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2018-01-17 22:41:51 --> Notice - Trying to get property of non-object in /var/www/html/videojuego/fuel/app/classes/controller/users.php on line 164
+WARNING - 2018-01-17 22:43:28 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2018-01-17 22:43:28 --> Notice - Trying to get property of non-object in /var/www/html/videojuego/fuel/app/classes/controller/users.php on line 160
+WARNING - 2018-01-17 22:44:39 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2018-01-17 22:44:39 --> Notice - Trying to get property of non-object in /var/www/html/videojuego/fuel/app/classes/controller/users.php on line 160
+WARNING - 2018-01-17 22:45:34 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2018-01-17 22:48:17 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
