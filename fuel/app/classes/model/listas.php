@@ -10,7 +10,7 @@ class Model_Listas extends Orm\Model
         'editable' => array('data_type' => 'int')
     );
 	protected static $_belongs_to = array(
-	    'users' => array(
+	    'usuarios' => array(
 	        'key_from' => 'id_usuario',
 	        'model_to' => 'Model_users',
 	        'key_to' => 'id',
@@ -19,7 +19,7 @@ class Model_Listas extends Orm\Model
 	    )
 	);
     protected static $_many_many = array(
-	    'songs' => array(
+	    'piezas' => array(
 	        'key_from' => 'id',
 	        'key_through_from' => 'id_pieza',
 	        'table_through' => 'añadir',

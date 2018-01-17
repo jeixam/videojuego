@@ -15,7 +15,7 @@ class Model_piezas extends Orm\Model
     );
 	
     protected static $_many_many = array(
-	    'lists' => array(
+	    'listas' => array(
 	        'key_from' => 'id',
 	        'key_through_from' => 'id_lista',
 	        'table_through' => 'añadir',

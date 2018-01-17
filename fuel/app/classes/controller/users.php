@@ -25,6 +25,9 @@ class Controller_Users extends Controller_Autentificacion
             $user = new Model_Users();
             $user->nombre = $input['nombre'];
             $user->password = $input['password'];
+            $user->email = $input['email'];
+            $user->victorias = $input['victorias'];
+            $user->derrotas = $input['derrotas'];
             $user->save();
 
             $json = $this->response(array(

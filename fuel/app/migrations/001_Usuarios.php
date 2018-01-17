@@ -14,6 +14,8 @@ class Usuarios
             'derrotas' => array('type' => 'int', 'constraint' => 11),
             'victorias' => array('type' => 'int', 'constraint' => 11)
             ), array('id'));
+
+        \DBUtil::create_index('usuarios',array('nombre','email'),'INDEX','UNIQUE');
     }
 
     function down()
