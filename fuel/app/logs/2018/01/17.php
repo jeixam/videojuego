@@ -40,3 +40,4 @@ WARNING - 2018-01-17 22:44:39 --> Fuel\Core\Fuel::init - The configured locale e
 ERROR - 2018-01-17 22:44:39 --> Notice - Trying to get property of non-object in /var/www/html/videojuego/fuel/app/classes/controller/users.php on line 160
 WARNING - 2018-01-17 22:45:34 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
 WARNING - 2018-01-17 22:48:17 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2018-01-17 23:40:20 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.

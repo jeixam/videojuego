@@ -83,9 +83,9 @@ class Controller_Users extends Controller_Autentificacion
      *  Funcion para entrar con usuario
      * @return token y un codigo
      */
-    public function Post_login()
+    public function get_login()
     {
-    	$input= $_POST;
+    	$input= $_GET;
         $input['nombre'];
         $entry = Model_Users::find('all', 
             array('where'=>array
